@@ -1,10 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFramework>net452</TargetFramework>
     <PackageId>SharpZipLib </PackageId>
-    <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>ICSharpCode.SharpZipLib.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>False</SignAssembly>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.0-alpha2</Version>
     <RepositoryUrl>https://github.com/icsharpcode/SharpZipLib</RepositoryUrl>
@@ -21,6 +20,7 @@ Please see https://github.com/icsharpcode/SharpZipLib/wiki/Release-1.0 for more 
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\netstandard1.3\ICSharpCode.SharpZipLib.xml</DocumentationFile>
+    <DefineConstants>TRACE;RELEASE;NET45</DefineConstants>
   </PropertyGroup>
 
 </Project>
